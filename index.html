@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Caprasimo&family=EB+Garamond&family=Kanit:wght@200&family=Ubuntu+Mono,wght@1,700&display=swap");
+    </style>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        color: white;
+        font-family: "Caprasimo", cursive;
+        font-family: "EB Garamond", serif;
+        font-family: "Kanit", sans-serif;
+        font-family: "Ubuntu Mono", monospace;
+      }
+
+      body,
+      html {
+        color: rgb(255, 255, 255);
+        background-color: rgb(0, 0, 0);
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        /* background: url('4.jpg') no-repeat; */
+        background: url("https://drive.google.com/uc?export=view&id=1onGRuqfUSoDg3yzgixcA3Mv7_y7AMdb2")
+          no-repeat;
+
+        background-size: cover;
+      }
+
+      .wrapper {
+        height: 360px;
+        border-radius: 20px;
+        width: 300px;
+        padding: 20px 30px;
+        /* background-color: blueviolet; */
+        background: transparent;
+        backdrop-filter: blur(30px);
+        overflow: hidden;
+      }
+
+      .wrapper h1 {
+        font-size: 36px;
+        text-align: center;
+      }
+
+      .in-box {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        margin: 30px 0px;
+      }
+
+      .in-box input {
+        width: 100%;
+        height: 100%;
+        outline: none;
+        border: none;
+        border: 2px solid rgba(255, 255, 255, 0.205);
+        background: transparent;
+        padding: 20px 20px;
+        border-radius: 40px;
+        box-sizing: border-box;
+        color: white;
+      }
+      .in-box input::placeholder {
+        color: white;
+      }
+
+      .in-box i {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      #check {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #f {
+        margin: 0px 30px;
+        font-size: 14px;
+        text-decoration: none;
+      }
+      #f:hover {
+        text-decoration: underline;
+      }
+
+      .login button {
+        width: 100%;
+        height: 40px;
+        margin: 15px 2px;
+        outline: none;
+        border: none;
+        border-radius: 30px;
+        text-align: center;
+        color: black;
+        cursor: pointer;
+        font-weight: 700;
+      }
+
+      .reg-link {
+        font-size: 14px;
+        text-align: center;
+      }
+
+      .reg-link a {
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .reg-link a:hover {
+        text-decoration: underline;
+      }
+
+      .custom {
+        position: relative;
+        right: -100%;
+        bottom: 0%;
+        transform: all 1s ease;
+      }
+
+      .custom i:hover {
+        scale: 1.2;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Login</h1>
+
+      <div class="in-box">
+        <input type="email" name="" id="Uname" placeholder="Username" />
+        <i class="bx bxs-user"></i>
+      </div>
+
+      <div class="in-box">
+        <input type="password" name="" id="password" placeholder="Password" />
+        <i class="bx bxs-lock-alt"></i>
+      </div>
+
+      <div id="check">
+        <div class="forgot">
+          <label for="remember">
+            <input type="checkbox" id="remember" />Remember Me
+          </label>
+          <a href="#" id="f">forgot password</a>
+        </div>
+      </div>
+
+      <div class="login">
+        <button type="submit">Login</button>
+      </div>
+
+      <div class="reg-link">
+        <p>
+          Don't have an account?
+          <a href="#">Register</a>
+        </p>
+      </div>
+
+      <div class="custom">
+        <i class="bx bxs-landscape"></i>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  var bg = document.querySelector("body");
+  var custom = document.querySelector(".custom");
+
+  const img = [
+    "https://drive.google.com/uc?export=view&id=1UnO6IVrz4ZKHumheTgNnw9aitiZt1g5w",
+    "https://drive.google.com/uc?export=view&id=1401ynZtkZ7L3FLiKdWFGe5o4pvsddST9",
+    "https://drive.google.com/uc?export=view&id=1ZvT4c-hb7R42xkJKyCqY-NeQdwPxjptE",
+    "https://drive.google.com/uc?export=view&id=145Od-uRVN-Uwj7xjzkEpe0nK9BpMgvy0",
+    "https://drive.google.com/uc?export=view&id=1onGRuqfUSoDg3yzgixcA3Mv7_y7AMdb2",
+    "https://drive.google.com/uc?export=view&id=1GZlLx6GySAaW8WWFnSh1oW4781t7Uq31",
+    "https://drive.google.com/uc?export=view&id=15ou2p3LtF8ZXdnNooIJxAtjnO3JnQjY3",
+    "https://drive.google.com/uc?export=view&id=1tO0yJSSfsVGv_ILJFCizP0CphmUwV_7g",
+  ];
+
+  var i = 0;
+  custom.addEventListener("click", () => {
+
+    if(i<img.length){
+
+        bg.style.background = "url('" + img[i] + "')";
+        bg.style.backgroundSize = "cover";
+        i=i+1;
+
+    }else{
+        i=1;
+    }
+    // i = (i + 1) % img.length;
+  });
+</script>
